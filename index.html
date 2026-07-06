@@ -265,6 +265,66 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
 </script>
 </head>
 <body>
+<!-- 微信内置浏览器引导层 -->
+<div id="wxGuide" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;background:rgba(0,0,0,0.92);backdrop-filter:blur(4px);">
+  <div style="position:absolute;top:18%;left:8%;right:8%;background:linear-gradient(135deg,#1a0a2e,#0f3460);border:1px solid rgba(245,215,142,0.4);border-radius:14px;padding:22px 18px;color:#e8d5b7;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.6);">
+    <div style="font-size:38px;margin-bottom:10px;">🪷</div>
+    <div style="font-size:18px;color:#f5d78e;font-weight:bold;letter-spacing:2px;margin-bottom:12px;">灵机妙算 · 微信内访问提示</div>
+    <div style="font-size:14px;color:#c8b898;line-height:1.7;margin-bottom:18px;">微信内置浏览器限制未能备案的域名<br>请按下方步骤在 浏览器 中打开</div>
+    <div style="background:rgba(255,255,255,0.06);border-radius:10px;padding:14px 12px;text-align:left;margin-bottom:14px;">
+      <div style="font-size:13px;color:#f5d78e;margin-bottom:8px;">📋 操作步骤</div>
+      <div style="font-size:13px;color:#c8b898;line-height:1.9;">
+        1. 点击右上角 <span style="color:#f5d78e;font-weight:bold;font-size:15px;">⋮</span> 三个点<br>
+        2. 选择 <span style="color:#f5d78e;font-weight:bold;">「在浏览器中打开」</span><br>
+        3. 浏览器中即可正常使用全部功能
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(245,215,142,0.1);border-radius:8px;padding:10px;">
+      <span style="font-size:13px;color:#a89db8;">右上角</span>
+      <span style="font-size:20px;color:#f5d78e;">⋮</span>
+      <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5 L20 20 M20 20 L20 12 M20 20 L12 20" stroke="#f5d78e" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span style="font-size:13px;color:#a89db8;">选「浏览器打开」</span>
+    </div>
+    <div style="margin-top:14px;font-size:11px;color:#8a7f9a;">提示：复制下方链接发到 QQ / 邮箱 → 浏览器中也行</div>
+    <div onclick="copyUrl()" style="margin-top:10px;padding:8px 12px;background:rgba(245,215,142,0.15);border:1px solid rgba(245,215,142,0.3);border-radius:6px;font-size:12px;color:#f5d78e;cursor:pointer;display:inline-block;">
+      📋 复制链接：https://lingjims.online
+    </div>
+  </div>
+  <div style="position:absolute;bottom:6%;left:0;right:0;text-align:center;color:#a89db8;font-size:11px;letter-spacing:1px;">保护域名 · 微信浏览器不可直接显示备案外页面</div>
+</div>
+<script>
+(function(){
+  var ua = navigator.userAgent;
+  var isWx = /MicroMessenger/i.test(ua);
+  var isQQ = /\bQQ\b/i.test(ua);
+  // 微信/QQ 内置浏览器：春节活动期间弹引导
+  if (isWx || isQQ) {
+    window.addEventListener('DOMContentLoaded', function(){
+      var g = document.getElementById('wxGuide');
+      if (g) g.style.display = 'block';
+    });
+  }
+})();
+function copyUrl(){
+  var url = 'https://lingjims.online';
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(url).then(function(){
+      alert('链接已复制：请粘贴到 QQ / 邮箱 / 浏览器打开');
+    }, function(){
+      fallbackCopy(url);
+    });
+  } else { fallbackCopy(url); }
+}
+function fallbackCopy(t){
+  var ta = document.createElement('textarea');
+  ta.value = t; ta.style.position='fixed'; ta.style.left='-9999px';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); alert('链接已复制：' + t); } catch(e) { prompt('手动复制链接：', t); }
+  document.body.removeChild(ta);
+}
+</script>
 <div class="stars" id="stars"></div>
 <div class="container">
     <!-- 首页 -->
