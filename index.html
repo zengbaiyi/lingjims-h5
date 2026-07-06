@@ -79,10 +79,10 @@
         .cta-box h3 { color: #f5d78e; font-size: 16px; margin-bottom: 8px; letter-spacing: 2px; }
         .cta-box p { font-size: 13px; color: #c8b898; margin-bottom: 14px; line-height: 1.6; }
         .cta-btn { display: inline-block; padding: 11px 28px; background: linear-gradient(135deg, #07c160, #06ad56); border-radius: 25px; color: #fff; font-size: 15px; text-decoration: none; font-weight: bold; letter-spacing: 2px; }
-        .loading { display: none; text-align: center; padding: 60px 0; }
-        .loading.active { display: block; }
-        .loading-spinner { width: 46px; height: 46px; border: 3px solid rgba(245,215,142,0.2); border-top-color: #f5d78e; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px; }
-        .loading-text { color: #a89db8; font-size: 13px; letter-spacing: 2px; }
+        
+        
+        
+        
         .disclaimer { text-align: center; font-size: 11px; color: #5a4f6a; margin-top: 24px; padding: 12px; line-height: 1.6; }
         .bottom-nav { display: flex; justify-content: center; gap: 16px; margin: 20px 0; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 12px; }
         .nav-item { font-size: 11px; color: #8a7f9a; text-align: center; cursor: pointer; }
@@ -458,7 +458,6 @@ function fallbackCopy(t){
     </div>
 
     <!-- 加载中 -->
-    <div class="page" id="page-loading"><div class="loading active"><div class="loading-spinner"></div><div class="loading-text">正在为您精准推算...</div></div></div>
 
     <!-- 结果页 -->
     <div class="page" id="page-result">
@@ -592,7 +591,6 @@ document.getElementById('palm-photo')?.addEventListener('change', function(e) {
 
 // API调用 - 流式输出版
 async function callMimo(systemPrompt, userPrompt) {
-    showPage('page-loading');
     try {
         const resp = await fetch(MIMO_URL, {
             method: 'POST',
@@ -614,7 +612,8 @@ async function callMimo(systemPrompt, userPrompt) {
         let content = '';
         let buffer = '';  // 拼接跨chunk的不完整行
         let renderPending = false;  // 节流：避免每个delta都触发DOM重排
-        showResult('🔮 测算结果', '正在为您精准推算...');
+        document.getElementById('result-title').textContent = '🔮 测算结果';
+        showPage('page-result');
         const el = document.getElementById('result-body');
         while (true) {
             const { done, value } = await reader.read();
