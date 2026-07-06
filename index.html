@@ -615,6 +615,7 @@ async function callMimo(systemPrompt, userPrompt) {
         document.getElementById('result-title').textContent = '🔮 测算结果';
         showPage('page-result');
         const el = document.getElementById('result-body');
+        el.textContent = '正在为您精准推算...';
         while (true) {
             const { done, value } = await reader.read();
             if (done) break;
