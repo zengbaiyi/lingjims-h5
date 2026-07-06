@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -598,7 +598,7 @@ async function callMimo(systemPrompt, userPrompt) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + MIMO_API_KEY },
             body: JSON.stringify({
-                model: 'minimaxai/minimax-m3',
+                model: 'mimo-v2.5-pro',
                 messages: [
                     { role: 'system', content: systemPrompt },
                     { role: 'user', content: userPrompt }
