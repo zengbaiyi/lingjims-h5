@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>妙思轻测 - 生辰趋势·姓名解析·选牌指引·双人匹配·手掌特点·面部特点</title>
+    <title>灵机妙算 - 八字命理·姓名测分·易经占卜·八字合婚·手相分析·面相分析</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; background: linear-gradient(180deg, #0a0a1a 0%, #1a0a2e 30%, #16213e 70%, #0f3460 100%); min-height: 100vh; color: #e8d5b7; overflow-x: hidden; }
@@ -271,38 +271,38 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
     <div class="page active" id="page-home">
         <div class="header">
             <div class="logo-symbol">☯</div>
-            <h1>妙思轻测</h1>
-            <div class="subtitle">性格趋势分析 · 面部特点解析 · 选牌指引 · 家居环境 · 黄历</div>
+            <h1>灵机妙算</h1>
+            <div class="subtitle">命理推算 · 面相分析 · 易经占卜 · 风水 · 黄历</div>
         </div>
-        <div class="notice"><span>🔔</span><span style="cursor:pointer;" onclick="copyWechatNotice()">添加专业分析师微信，获取更详细的解读与建议</span></div>
+        <div class="notice"><span>🔔</span><span style="cursor:pointer;" onclick="copyWechatNotice()">添加专业命理师微信，获取更详细的解读与开运建议</span></div>
         <div class="section-title">🔮 核心功能</div>
         <div class="func-grid">
-            <div class="func-card" onclick="showPage('page-bazi')"><span class="hot-tag">HOT</span><span class="icon">🏮</span><div class="title">生辰趋势</div><div class="desc">生辰组合·五行属性·走向详批</div></div>
-            <div class="func-card" onclick="showPage('page-name')"><span class="icon">📝</span><div class="title">姓名测分</div><div class="desc">五格三才·姓名综合倾向·走向加持</div></div>
-            <div class="func-card" onclick="showPage('page-yijing')"><span class="icon">🔮</span><div class="title">选牌指引</div><div class="desc">六爻卦象·顺势而为·方向指引</div></div>
-            <div class="func-card" onclick="showPage('page-bazi-hehun')"><span class="icon">💑</span><div class="title">双人匹配</div><div class="desc">输入双方生辰·精准分析匹配</div></div>
-            <div class="func-card" onclick="showPage('page-palm')"><span class="icon">✋</span><div class="title">手掌特点解析</div><div class="desc">掌纹特征·事业线·感情线·智慧线</div></div>
-            <div class="func-card" onclick="showPage('page-face')"><span class="icon">👤</span><div class="title">面部特点解析</div><div class="desc">五官特征·性格倾向·走向解读</div></div>
+            <div class="func-card" onclick="showPage('page-bazi')"><span class="hot-tag">HOT</span><span class="icon">🏮</span><div class="title">八字命理</div><div class="desc">生辰八字·五行命盘·运势详批</div></div>
+            <div class="func-card" onclick="showPage('page-name')"><span class="icon">📝</span><div class="title">姓名测分</div><div class="desc">五格三才·姓名吉凶·运势加持</div></div>
+            <div class="func-card" onclick="showPage('page-yijing')"><span class="icon">🔮</span><div class="title">易经占卜</div><div class="desc">六爻卦象·趋吉避凶·指点迷津</div></div>
+            <div class="func-card" onclick="showPage('page-bazi-hehun')"><span class="icon">💑</span><div class="title">八字合婚</div><div class="desc">输入双方生辰·AI分析姻缘匹配</div></div>
+            <div class="func-card" onclick="showPage('page-palm')"><span class="icon">✋</span><div class="title">手相分析</div><div class="desc">掌纹命理·事业线·感情线·智慧线</div></div>
+            <div class="func-card" onclick="showPage('page-face')"><span class="icon">👤</span><div class="title">面相分析</div><div class="desc">五官面相·性格特点·运势走向</div></div>
         </div>
-        <div class="section-title">📅 今日建议</div>
-        <div class="func-banner" onclick="showPage('page-huangli')"><span class="icon">📅</span><div class="info"><div class="title">黄历查询</div><div class="desc">综合建议·时段参考·择日参考</div></div><span class="arrow">›</span></div>
+        <div class="section-title">📅 今日宜忌</div>
+        <div class="func-banner" onclick="showPage('page-huangli')"><span class="icon">📅</span><div class="info"><div class="title">黄历查询</div><div class="desc">今日宜忌·吉时查询·择日择吉</div></div><span class="arrow">›</span></div>
         <div class="section-title">✨ 更多服务</div>
-        <div class="func-banner" onclick="showPage('page-fengshui')"><span class="icon">🧭</span><div class="info"><div class="title">家居环境解析</div><div class="desc">房屋布局·方位倾向·调整建议</div></div><span class="arrow">›</span></div>
+        <div class="func-banner" onclick="showPage('page-fengshui')"><span class="icon">🧭</span><div class="info"><div class="title">风水测算</div><div class="desc">家居风水·方位吉凶·布局建议</div></div><span class="arrow">›</span></div>
         <div class="bottom-nav">
             <div class="nav-item" onclick="showPage('page-home')"><span class="nav-icon">🏠</span><span>首页</span></div>
             <div class="nav-item" onclick="showPage('page-huangli')"><span class="nav-icon">📅</span><span>黄历</span></div>
-            <div class="nav-item" onclick="showPage('page-bazi')"><span class="nav-icon">🏮</span><span>解析</span></div>
-            <div class="nav-item" onclick="showPage('page-yijing')"><span class="nav-icon">🔮</span><span>指引</span></div>
+            <div class="nav-item" onclick="showPage('page-bazi')"><span class="nav-icon">🏮</span><span>算命</span></div>
+            <div class="nav-item" onclick="showPage('page-yijing')"><span class="nav-icon">🔮</span><span>占卜</span></div>
         </div>
         <div class="disclaimer">⚠️ 本测试仅供娱乐参考，不构成任何决策建议<br>命运掌握在自己手中</div>
     </div>
 
-    <!-- 双人匹配 -->
+    <!-- 八字合婚 -->
     <div class="page" id="page-bazi-hehun">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">💑 双人匹配</div>
+        <div class="page-title">💑 八字合婚</div>
         <div style="background:rgba(245,215,142,0.08);border-radius:12px;padding:14px;margin-bottom:16px;text-align:center;">
-            <div style="font-size:14px;color:#f5d78e;">👫 输入双方生辰，精准分析匹配度</div>
+            <div style="font-size:14px;color:#f5d78e;">👫 输入双方生辰，AI分析姻缘匹配度</div>
         </div>
         <div style="font-size:15px;color:#f5d78e;font-weight:bold;margin-bottom:12px;">👨 男方信息</div>
         <div class="form-group"><label>👤 姓名</label><input type="text" id="hehun-male-name" placeholder="男方姓名（选填）"></div>
@@ -313,24 +313,24 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
         <div class="form-group"><label>👤 姓名</label><input type="text" id="hehun-female-name" placeholder="女方姓名（选填）"></div>
         <div class="form-group"><label>📅 出生日期</label><input type="text" id="hehun-female-date" placeholder="点击选择日期" readonly onclick="openWheelPicker(this)"></div>
         <div class="form-group"><label>⏰ 出生时辰</label><select id="hehun-female-hour"><option value="">请选择出生时辰</option><option value="子时(23:00-01:00)">子时 (23:00-01:00)</option><option value="丑时(01:00-03:00)">丑时 (01:00-03:00)</option><option value="寅时(03:00-05:00)">寅时 (03:00-05:00)</option><option value="卯时(05:00-07:00)">卯时 (05:00-07:00)</option><option value="辰时(07:00-09:00)">辰时 (07:00-09:00)</option><option value="巳时(09:00-11:00)">巳时 (09:00-11:00)</option><option value="午时(11:00-13:00)">午时 (11:00-13:00)</option><option value="未时(13:00-15:00)">未时 (13:00-15:00)</option><option value="申时(15:00-17:00)">申时 (15:00-17:00)</option><option value="酉时(17:00-19:00)">酉时 (17:00-19:00)</option><option value="戌时(19:00-21:00)">戌时 (19:00-21:00)</option><option value="亥时(21:00-23:00)">亥时 (21:00-23:00)</option></select></div>
-        <button class="submit-btn" onclick="submitHehun()">开始双人匹配 ✨</button>
+        <button class="submit-btn" onclick="submitHehun()">开始合婚 ✨</button>
     </div>
 
-    <!-- 生辰解析 -->
+    <!-- 八字算命 -->
     <div class="page" id="page-bazi">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">🏮 生辰解析</div>
+        <div class="page-title">🏮 八字算命</div>
         <div class="form-group"><label>👤 您的姓名</label><input type="text" id="bazi-name" placeholder="请输入姓名（选填）"></div>
         <div class="form-group"><label>📅 出生日期</label><input type="text" id="bazi-date" placeholder="点击选择日期" readonly onclick="openWheelPicker(this)"></div>
         <div class="form-group"><label>⏰ 出生时辰</label><select id="bazi-hour"><option value="">请选择出生时辰</option><option value="子时(23:00-01:00)">子时 (23:00-01:00)</option><option value="丑时(01:00-03:00)">丑时 (01:00-03:00)</option><option value="寅时(03:00-05:00)">寅时 (03:00-05:00)</option><option value="卯时(05:00-07:00)">卯时 (05:00-07:00)</option><option value="辰时(07:00-09:00)">辰时 (07:00-09:00)</option><option value="巳时(09:00-11:00)">巳时 (09:00-11:00)</option><option value="午时(11:00-13:00)">午时 (11:00-13:00)</option><option value="未时(13:00-15:00)">未时 (13:00-15:00)</option><option value="申时(15:00-17:00)">申时 (15:00-17:00)</option><option value="酉时(17:00-19:00)">酉时 (17:00-19:00)</option><option value="戌时(19:00-21:00)">戌时 (19:00-21:00)</option><option value="亥时(21:00-23:00)">亥时 (21:00-23:00)</option></select></div>
         <div class="form-group"><label>⚧ 性别</label><select id="bazi-gender"><option value="男">男</option><option value="女">女</option></select></div>
-        <button class="submit-btn" onclick="submitBazi()">开始解析 ✨</button>
+        <button class="submit-btn" onclick="submitBazi()">开始算命 ✨</button>
     </div>
 
-    <!-- 面部特点解析 -->
+    <!-- 面相分析 -->
     <div class="page" id="page-face">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">👤 面部特点解析</div>
+        <div class="page-title">👤 面相分析</div>
         <div class="form-group"><label>👤 您的姓名</label><input type="text" id="face-name" placeholder="请输入姓名（选填）"></div>
         <div class="form-group"><label>⚧ 性别</label><select id="face-gender"><option value="男">男</option><option value="女">女</option></select></div>
         <div class="form-group"><label>📸 上传正面照片</label><input type="file" id="face-photo" accept="image/*" style="padding:12px;"><div style="font-size:12px;color:#5a4f6a;margin-top:6px;">请上传清晰的正面免冠照片</div></div>
@@ -343,7 +343,7 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
         <div class="page-title">📝 姓名测分</div>
         <div style="background:rgba(245,215,142,0.08);border-radius:12px;padding:14px;margin-bottom:16px;text-align:center;">
-            <div style="font-size:14px;color:#f5d78e;">输入姓名，智能分析五格三才、姓名综合倾向</div>
+            <div style="font-size:14px;color:#f5d78e;">输入姓名，智能分析五格三才、姓名吉凶</div>
         </div>
         <div class="form-group"><label>👤 您的姓名</label><input type="text" id="name-score" placeholder="请输入您的姓名"></div>
         <div class="form-group"><label>⚧ 性别</label><select id="name-gender"><option value="男">男</option><option value="女">女</option></select></div>
@@ -351,42 +351,42 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
         <button class="submit-btn" onclick="submitNameScore()">开始测分 ✨</button>
     </div>
 
-    <!-- 手掌特点解析 -->
+    <!-- 手相分析 -->
     <div class="page" id="page-palm">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">✋ 手掌特点解析</div>
+        <div class="page-title">✋ 手相分析</div>
         <div style="background:rgba(245,215,142,0.08);border-radius:12px;padding:14px;margin-bottom:16px;text-align:center;">
-            <div style="font-size:14px;color:#f5d78e;">上传手掌照片，智能分析掌纹特征</div>
+            <div style="font-size:14px;color:#f5d78e;">上传手掌照片，智能分析掌纹命理</div>
         </div>
         <div class="form-group"><label>👤 您的姓名</label><input type="text" id="palm-name" placeholder="请输入姓名（选填）"></div>
         <div class="form-group"><label>⚧ 性别</label><select id="palm-gender"><option value="男">男</option><option value="女">女</option></select></div>
-        <div class="form-group"><label>🤚 选择手掌</label><select id="palm-hand"><option value="左手">左手（先天走向）</option><option value="右手">右手（后天走向）</option><option value="双手">双手综合</option></select></div>
+        <div class="form-group"><label>🤚 选择手掌</label><select id="palm-hand"><option value="左手">左手（先天运势）</option><option value="右手">右手（后天运势）</option><option value="双手">双手综合</option></select></div>
         <div class="form-group"><label>📸 上传手掌照片</label><input type="file" id="palm-photo" accept="image/*" style="padding:12px;"><div style="font-size:12px;color:#5a4f6a;margin-top:6px;">请在光线充足的地方拍摄清晰的手掌照片</div></div>
         <div id="palm-preview" style="text-align:center;margin:14px 0;display:none;"><img id="palm-preview-img" style="max-width:180px;border-radius:12px;border:2px solid rgba(245,215,142,0.3);"></div>
         <button class="submit-btn" onclick="submitPalm()">开始分析 ✨</button>
     </div>
 
-    <!-- 选牌指引 -->
+    <!-- 易经占卜 -->
     <div class="page" id="page-yijing">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">🔮 选牌指引</div>
+        <div class="page-title">🔮 易经占卜</div>
         <p style="text-align:center;color:#8a7f9a;font-size:13px;margin-bottom:16px;">静心凝神，凭直觉选择3张卦牌</p>
-        <div class="form-group"><label>❓ 你想指引什么？</label><input type="text" id="yijing-question" placeholder="例如：近期事业走向如何？"></div>
+        <div class="form-group"><label>❓ 你想占卜什么？</label><input type="text" id="yijing-question" placeholder="例如：近期事业运势如何？"></div>
         <div style="text-align:center;color:#f5d78e;font-size:13px;margin-bottom:10px;">已选 <span id="yijing-count">0</span>/3 张</div>
         <div class="yijing-cards" id="yijing-cards"></div>
         <button class="submit-btn" onclick="submitYijing()">解读卦象 ✨</button>
     </div>
 
-    <!-- 家居环境解析 -->
+    <!-- 风水测算 -->
     <div class="page" id="page-fengshui">
         <div class="back-btn" onclick="showPage('page-home')">← 返回</div>
-        <div class="page-title">🧭 家居环境解析</div>
+        <div class="page-title">🧭 风水测算</div>
         <div class="fengshui-compass"><span class="compass-direction compass-n">北</span><span class="compass-direction compass-s">南</span><span class="compass-direction compass-e">东</span><span class="compass-direction compass-w">西</span></div>
         <div class="form-group"><label>🏠 房屋类型</label><select id="fengshui-type"><option value="住宅">住宅</option><option value="商铺">商铺</option><option value="办公室">办公室</option></select></div>
         <div class="form-group"><label>🧭 房屋朝向</label><select id="fengshui-direction"><option value="">请选择房屋朝向</option><option value="坐北朝南">坐北朝南</option><option value="坐南朝北">坐南朝北</option><option value="坐东朝西">坐东朝西</option><option value="坐西朝东">坐西朝东</option><option value="坐东北朝西南">坐东北朝西南</option><option value="坐西南朝东北">坐西南朝东北</option><option value="坐东南朝西北">坐东南朝西北</option><option value="坐西北朝东南">坐西北朝东南</option></select></div>
         <div class="form-group"><label>👤 您的生辰（选填）</label><input type="text" id="fengshui-birthday" placeholder="点击选择日期" readonly onclick="openWheelPicker(this)"></div>
-        <div class="form-group"><label>📝 具体描述（选填）</label><textarea id="fengshui-desc" rows="3" placeholder="例如：最近总觉得走向不佳，家里客厅沙发摆放位置..."></textarea></div>
-        <button class="submit-btn" onclick="submitFengshui()">开始解析 ✨</button>
+        <div class="form-group"><label>📝 具体描述（选填）</label><textarea id="fengshui-desc" rows="3" placeholder="例如：最近总觉得运势不佳，家里客厅沙发摆放位置..."></textarea></div>
+        <button class="submit-btn" onclick="submitFengshui()">开始测算 ✨</button>
     </div>
 
     <!-- 黄历查询 -->
@@ -398,16 +398,16 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
     </div>
 
     <!-- 加载中 -->
-    <div class="page" id="page-loading"><div class="loading active"><div class="loading-spinner"></div><div class="loading-text">正在为您精准分析...</div></div></div>
+    <div class="page" id="page-loading"><div class="loading active"><div class="loading-spinner"></div><div class="loading-text">正在为您精准推算...</div></div></div>
 
     <!-- 结果页 -->
     <div class="page" id="page-result">
         <div class="back-btn" onclick="showPage('page-home')">← 返回首页</div>
-        <div class="result-header"><h2 id="result-title">🔮 解析报告</h2></div>
+        <div class="result-header"><h2 id="result-title">🔮 测算结果</h2></div>
         <div class="result-body" id="result-body"></div>
         <div class="cta-box">
-            <h3>🔮 解锁完整性格趋势报告</h3>
-            <p>添加专业分析师微信，获取更详细的个性化解读与建议</p>
+            <h3>🔮 解锁完整命理报告</h3>
+            <p>添加专业命理师微信，获取更详细的个性化解读与开运建议</p>
             <a href="javascript:void(0)" class="cta-btn" onclick="copyWechat()">📱 添加微信咨询</a>
             <div id="wechat-id" style="margin-top:12px;color:#f5d78e;font-size:15px;font-weight:bold;">微信号：ljmiaosuan</div>
         </div>
@@ -417,9 +417,9 @@ document.getElementById('wheelPickerOverlay').addEventListener('click', function
 
 
 <script>
-/* MIMO v2.5 Pro - 直接调用（CORS已支持） */
+/* MiniMax M3 via Pages Functions proxy */
 const MIMO_URL = 'https://token-plan-cn.xiaomimimo.com/v1/chat/completions';
-const MIMO_API_KEY = 'tp-ccbnai843635qkwpmmpwo30pizka3qzsln85g3y96ndcbdmo';
+const MIMO_API_KEY = 'tp-ccbnai843635qkwpmyn9w6599w5vyb16j8nf1u1c68y4k66co1273q7gljktfd6536sl7x58j96m2o3k6w076xvp8ha551sn66k29t79q8ybdo66b616thdm5413c4bdmo';
 
 // 清理AI返回的markdown符号，让显示更干净
 function cleanAIText(text) {
@@ -441,7 +441,7 @@ function cleanAIText(text) {
     return text;
 }
 
-// 选牌数据
+// 易经卦象数据
 const YIJING_DECK = [
     { id: 1, symbol: '☰', name: '乾', meaning: '天·刚健', desc: '元亨利贞' },
     { id: 2, symbol: '☷', name: '坤', meaning: '地·柔顺', desc: '厚德载物' },
@@ -470,7 +470,7 @@ function initStars() {
     }
 }
 
-// 初始化选牌牌
+// 初始化易经牌
 function initYijing() {
     const grid = document.getElementById('yijing-cards');
     const shuffled = [...YIJING_DECK].sort(() => Math.random() - 0.5).slice(0, 9);
@@ -517,7 +517,7 @@ document.getElementById('face-photo')?.addEventListener('change', function(e) {
     }
 });
 
-// 手掌照片预览
+// 手相照片预览
 document.getElementById('palm-photo')?.addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (file) {
@@ -532,13 +532,13 @@ document.getElementById('palm-photo')?.addEventListener('change', function(e) {
 
 // API调用 - 流式输出版
 async function callMimo(systemPrompt, userPrompt) {
-    showResult('🔮 解析报告', '正在为您精准分析...');
+    showPage('page-loading');
     try {
         const resp = await fetch(MIMO_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + MIMO_API_KEY },
             body: JSON.stringify({
-                model: 'mimo-v2.5-pro',
+                model: 'minimaxai/minimax-m3',
                 messages: [
                     { role: 'system', content: systemPrompt },
                     { role: 'user', content: userPrompt }
@@ -554,6 +554,7 @@ async function callMimo(systemPrompt, userPrompt) {
         let content = '';
         let buffer = '';  // 拼接跨chunk的不完整行
         let renderPending = false;  // 节流：避免每个delta都触发DOM重排
+        showResult('🔮 测算结果', '正在为您精准推算...');
         const el = document.getElementById('result-body');
         while (true) {
             const { done, value } = await reader.read();
@@ -605,7 +606,7 @@ function showResult(title, content) {
     showPage('page-result');
 }
 
-// 生辰解析
+// 八字算命
 function submitBazi() {
     const date = document.getElementById('bazi-date').value;
     const hour = document.getElementById('bazi-hour').value;
@@ -613,12 +614,12 @@ function submitBazi() {
     if (!hour) return alert('请选择出生时辰');
     const name = document.getElementById('bazi-name').value || '缘主';
     const gender = document.getElementById('bazi-gender').value;
-    const sys = '你是一位精通中国传统性格分析的生辰解析大师。请根据用户的出生日期和时辰，进行详细的生辰趋势分析。分析内容包括：1.组合分析（年柱、月柱、日柱、时柱）2.五行分析 3.命格特点 4.性格分析 5.事业财运 6.感情婚姻 7.健康提醒 8.建议 9.【总结】用3-5句话概括整体命格特点和核心建议。请用通俗易懂的语言，带有传统性格趋势术语的解释。回复要有条理，使用emoji点缀。';
-    const user = '姓名：' + name + '\n性别：' + gender + '\n出生日期：' + date + '\n出生时辰：' + hour + '\n请为我进行详细的生辰趋势分析。';
+    const sys = '你是一位精通中国传统命理学的八字算命大师。请根据用户的出生日期和时辰，进行详细的八字命理分析。分析内容包括：1.八字排盘（年柱、月柱、日柱、时柱）2.五行分析 3.命格特点 4.性格分析 5.事业财运 6.感情婚姻 7.健康提醒 8.开运建议 9.【总结】用3-5句话概括整体命格特点和核心建议。请用通俗易懂的语言，带有传统命理术语的解释。回复要有条理，使用emoji点缀。';
+    const user = '姓名：' + name + '\n性别：' + gender + '\n出生日期：' + date + '\n出生时辰：' + hour + '\n请为我进行详细的八字命理分析。';
     callMimo(sys, user);
 }
 
-// 双人匹配
+// 八字合婚
 function submitHehun() {
     const maleDate = document.getElementById('hehun-male-date').value;
     const maleHour = document.getElementById('hehun-male-hour').value;
@@ -628,17 +629,17 @@ function submitHehun() {
     if (!femaleDate || !femaleHour) return alert('请填写女方完整的出生信息');
     const maleName = document.getElementById('hehun-male-name').value || '男方';
     const femaleName = document.getElementById('hehun-female-name').value || '女方';
-    const sys = '你是一位精通双人匹配的传统分析师。请根据男女双方的出生信息，进行详细的双人匹配分析。分析内容包括：1.双方组合分析 2.五行互补分析 3.日柱干支关系 4.性格匹配度 5.婚姻走向预测 6.需要注意的年份 7.化解建议 8.综合评分（满分100分）9.【总结】用3-5句话概括双方姻缘核心特点和相处建议。请给出客观、详细的分析，语言温和有建设性。';
-    const user = '男方：' + maleName + '，出生日期：' + maleDate + '，时辰：' + maleHour + '\n女方：' + femaleName + '，出生日期：' + femaleDate + '，时辰：' + femaleHour + '\n请为我们进行双人匹配分析。';
+    const sys = '你是一位精通八字合婚的传统命理师。请根据男女双方的出生信息，进行详细的八字合婚分析。分析内容包括：1.双方八字排盘 2.五行互补分析 3.日柱干支关系 4.性格匹配度 5.婚姻运势预测 6.需要注意的年份 7.化解建议 8.综合评分（满分100分）9.【总结】用3-5句话概括双方姻缘核心特点和相处建议。请给出客观、详细的分析，语言温和有建设性。';
+    const user = '男方：' + maleName + '，出生日期：' + maleDate + '，时辰：' + maleHour + '\n女方：' + femaleName + '，出生日期：' + femaleDate + '，时辰：' + femaleHour + '\n请为我们进行八字合婚分析。';
     callMimo(sys, user);
 }
 
-// 面部特点解析
+// 面相分析
 function submitFace() {
     const name = document.getElementById('face-name').value || '缘主';
     const gender = document.getElementById('face-gender').value;
-    const sys = '你是一位精通中国传统面部学的面部大师。请根据用户提供的信息，进行详细的面部特点解析。分析内容包括：1.面部整体格局 2.额头（天庭）分析 3.眉毛分析 4.眼睛分析 5.鼻子分析 6.嘴巴分析 7.耳朵分析 8.面型与走向 9.综合面部点评 10.建议 11.【总结】用3-5句话概括面部核心特点和走向走向。请用专业但通俗的语言，带有传统文化韵味。';
-    const user = '姓名：' + name + '\n性别：' + gender + '\n请为我进行面部特点解析，给出详细的面部解读和走向建议。';
+    const sys = '你是一位精通中国传统面相学的面相大师。请根据用户提供的信息，进行详细的面相分析。分析内容包括：1.面相整体格局 2.额头（天庭）分析 3.眉毛分析 4.眼睛分析 5.鼻子分析 6.嘴巴分析 7.耳朵分析 8.面型与运势 9.综合面相点评 10.开运建议 11.【总结】用3-5句话概括面相核心特点和运势走向。请用专业但通俗的语言，带有传统文化韵味。';
+    const user = '姓名：' + name + '\n性别：' + gender + '\n请为我进行面相分析，给出详细的面相解读和运势建议。';
     callMimo(sys, user);
 }
 
@@ -648,41 +649,41 @@ function submitNameScore() {
     if (!name) return alert('请输入您的姓名');
     const gender = document.getElementById('name-gender').value;
     const birthday = document.getElementById('name-birthday').value;
-    const sys = '你是一位精通中国传统姓名学的姓名大师。请根据用户提供的姓名，进行详细的姓名分析和评分。分析内容包括：1.姓名五格分析（天格、人格、地格、外格、总格）2.三才配置分析 3.姓名综合倾向判断 4.姓名五行属性 5.姓名与性格关系 6.姓名与事业走向 7.姓名与感情婚姻 8.姓名与健康 9.综合评分（满分100分）10.改名建议（如有需要）11.【总结】用3-5句话概括姓名核心特点和走向影响。请给出专业、客观的分析。';
+    const sys = '你是一位精通中国传统姓名学的姓名大师。请根据用户提供的姓名，进行详细的姓名分析和评分。分析内容包括：1.姓名五格分析（天格、人格、地格、外格、总格）2.三才配置分析 3.姓名吉凶判断 4.姓名五行属性 5.姓名与性格关系 6.姓名与事业运势 7.姓名与感情婚姻 8.姓名与健康 9.综合评分（满分100分）10.改名建议（如有需要）11.【总结】用3-5句话概括姓名核心特点和运势影响。请给出专业、客观的分析。';
     const user = '姓名：' + name + '\n性别：' + gender + (birthday ? '\n出生日期：' + birthday : '') + '\n请为我进行详细的姓名分析和评分。';
     callMimo(sys, user);
 }
 
-// 手掌特点解析
+// 手相分析
 function submitPalm() {
     const name = document.getElementById('palm-name').value || '缘主';
     const gender = document.getElementById('palm-gender').value;
     const hand = document.getElementById('palm-hand').value;
-    const sys = '你是一位精通中国传统手掌学的手掌大师。请根据用户提供的信息，进行详细的手掌特点解析。分析内容包括：1.掌型分析（木形手、火形手、土形手、金形手、水形手）2.三大主线分析（生命线、智慧线、感情线）3.事业线分析 4.财运线分析 5.婚姻线分析 6.健康线分析 7.特殊掌纹标记（星纹、岛纹、十字纹等）8.手指形态分析 9.掌色分析 10.综合走向预测 11.建议 12.【总结】用3-5句话概括手掌核心特点和走向走向。请用专业但通俗的语言，带有传统文化韵味。';
-    const user = '姓名：' + name + '\n性别：' + gender + '\n分析手掌：' + hand + '\n请为我进行详细的手掌特点解析，给出走向解读和建议。';
+    const sys = '你是一位精通中国传统手相学的手相大师。请根据用户提供的信息，进行详细的手相分析。分析内容包括：1.掌型分析（木形手、火形手、土形手、金形手、水形手）2.三大主线分析（生命线、智慧线、感情线）3.事业线分析 4.财运线分析 5.婚姻线分析 6.健康线分析 7.特殊掌纹标记（星纹、岛纹、十字纹等）8.手指形态分析 9.掌色分析 10.综合运势预测 11.开运建议 12.【总结】用3-5句话概括手相核心特点和运势走向。请用专业但通俗的语言，带有传统文化韵味。';
+    const user = '姓名：' + name + '\n性别：' + gender + '\n分析手掌：' + hand + '\n请为我进行详细的手相分析，给出运势解读和建议。';
     callMimo(sys, user);
 }
 
-// 选牌指引
+// 易经占卜
 function submitYijing() {
     const question = document.getElementById('yijing-question').value;
     if (!question) return alert('请输入你的问题');
     if (selectedYijing.length < 3) return alert('请选择3张卦牌');
     const cards = selectedYijing.map(c => c.symbol + ' ' + c.name + '(' + c.meaning + '): ' + c.desc).join('\n');
-    const sys = '你是一位精通选牌的大师。请根据用户抽取的卦牌和问题，进行详细的选牌指引解读。内容包括：1.卦象总览 2.每张卦牌的含义 3.卦象组合分析 4.对问题的具体解答 5.时运分析 6.行动建议 7.注意事项 8.【总结】用3-5句话概括卦象核心启示和行动指引。请用传统易学语言结合现代白话进行解读。';
-    const user = '我的问题：' + question + '\n\n抽取的卦牌：\n' + cards + '\n\n请为我进行详细的选牌指引解读。';
+    const sys = '你是一位精通易经卦象的大师。请根据用户抽取的卦牌和问题，进行详细的易经占卜解读。内容包括：1.卦象总览 2.每张卦牌的含义 3.卦象组合分析 4.对问题的具体解答 5.时运分析 6.行动建议 7.注意事项 8.【总结】用3-5句话概括卦象核心启示和行动指引。请用传统易学语言结合现代白话进行解读。';
+    const user = '我的问题：' + question + '\n\n抽取的卦牌：\n' + cards + '\n\n请为我进行详细的易经占卜解读。';
     callMimo(sys, user);
 }
 
-// 家居环境解析
+// 风水测算
 function submitFengshui() {
     const direction = document.getElementById('fengshui-direction').value;
     if (!direction) return alert('请选择房屋朝向');
     const type = document.getElementById('fengshui-type').value;
     const birthday = document.getElementById('fengshui-birthday').value;
     const desc = document.getElementById('fengshui-desc').value;
-    const sys = '你是一位精通中国传统家居环境学的家居环境大师。请根据用户提供的房屋信息，进行详细的家居环境分析。内容包括：1.房屋朝向分析 2.整体家居环境格局 3.五行方位分析 4.财位分析 5.桃花位/文昌位分析 6.厨房/卧室家居环境 7.环境问题化解 8.建议布局建议 9.【总结】用3-5句话概括家居环境核心问题和最重要的布局调整建议。请给出专业、实用的家居环境建议。';
-    const user = '房屋类型：' + type + '\n房屋朝向：' + direction + '\n业主生辰：' + (birthday || '未提供') + '\n补充说明：' + (desc || '无') + '\n\n请为我进行详细的家居环境分析和布局建议。';
+    const sys = '你是一位精通中国传统风水学的风水大师。请根据用户提供的房屋信息，进行详细的风水分析。内容包括：1.房屋朝向分析 2.整体风水格局 3.五行方位分析 4.财位分析 5.桃花位/文昌位分析 6.厨房/卧室风水 7.风水煞气化解 8.开运布局建议 9.【总结】用3-5句话概括风水核心问题和最重要的布局调整建议。请给出专业、实用的风水建议。';
+    const user = '房屋类型：' + type + '\n房屋朝向：' + direction + '\n业主生辰：' + (birthday || '未提供') + '\n补充说明：' + (desc || '无') + '\n\n请为我进行详细的风水分析和布局建议。';
     callMimo(sys, user);
 }
 
